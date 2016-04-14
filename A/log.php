@@ -17,6 +17,7 @@ if ($_SESSION["user_account"]!=NULL) {
 		密碼：<input type="password" name="user_password"><br />
 		<input type="reset">
 		<input type="submit">
+		<a href="reg.php">註冊</a>
 	</form>
 </body>
 </html>
