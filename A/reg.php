@@ -37,20 +37,7 @@ $_SESSION["user_phone"] = $user_phone;
 $_SESSION["user_login_date"] = $nowtime;
 
 
-$read="SELECT * FROM user";
-		$readresult=mysqli_query($link,$read);
-		echo "<table border='1'>";
-		echo "<tr>";
-			echo "<th>","No","</th><th>","Account","</th><th>","password","</th><th>","email","</th><th>","phone","</th><th>","更改","</th><th>","刪除","</th>";
-		echo "</tr>";
-		while($result=mysqli_fetch_array($readresult)){
-			echo "<tr>";
-				echo "<td>",$result[0],"</td><td>",$result[1],"</td><td>",$result[2],"</td><td>",$result[3],"</td><td>",$result[4],"</td>";
-				echo "<td><a href='update.php?no=",$result[0],"'>更新資料</a></td>";
-				echo "<td><a href='del.php?no=",$result[0],"'>刪除資料","</td>";
-			echo "</tr>";
-		}
-		echo "</table>";
+
 mysqli_close($link);
 header("reg_success.php");
 
