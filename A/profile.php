@@ -20,5 +20,6 @@ echo "<form action='do_update.php' method='post'>";
 	echo "</form>";
 }
  ?>
- <input type ='button' onclick='javascript:location.href=","'checkdel.php'"," value='刪除'></input>
+ <input type ='button' onclick="javascript:location.href='checkdel.php'" value='刪除'></input>
+
 
